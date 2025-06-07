@@ -1,0 +1,4 @@
+---
+# SSH settings specific to client hosts
+ansible_user: root
+ansible_ssh_extra_args: '-o IdentitiesOnly=yes'

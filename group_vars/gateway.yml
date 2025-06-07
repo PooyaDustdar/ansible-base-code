@@ -1,0 +1,4 @@
+---
+# SSH settings specific to gateway hosts
+ansible_user: root
+ansible_connection: local  # برای localhost از اتصال local استفاده می‌کنیم
