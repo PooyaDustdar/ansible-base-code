@@ -1,0 +1,5 @@
+---
+roles:
+  - name: ansible-sshconfig
+    src: https://github.com/PooyaDustdar/ansible-sshconfig
+    scm: git

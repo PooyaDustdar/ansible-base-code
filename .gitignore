@@ -1,0 +1,13 @@
+# Ansible Galaxy installed roles
+roles/**/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ansible retry files
+*.retry
+
+# Log files
+*.log

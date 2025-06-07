@@ -1,0 +1,26 @@
+---
+- name: Configure SSH on all environments
+  hosts: environments
+  become: true
+  vars:
+    ssh_users:
+      - username: alice
+        email: alice@example.com
+        groups:
+          - admin
+          - infra
+          - devops
+      - username: bob
+        email: bob@example.com
+        groups:
+          - developer
+          - frontend
+      - username: carol
+        email: carol@example.com
+        groups:
+          - developer
+          - backend
+    ca_key_path: /etc/ssh/ca # در محیط تولید باید در مسیر امن‌تری قرار گیرد
+    cert_validity: 7884000  # سه ماه
+  roles:
+    - role: ansible-sshconfig
